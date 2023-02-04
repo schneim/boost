@@ -1,3 +1,6 @@
 {
-    "esbonio.sphinx.confDir": "${workspaceFolder}/doc/src"
+    "esbonio.sphinx.confDir": "${workspaceFolder}/doc/src",
+    "yaml.schemas": {
+        "https://json.schemastore.org/github-workflow.json": "file:///Users/schneim/work/boost/.github/workflows/sphinx.yml"
+    }
 }
