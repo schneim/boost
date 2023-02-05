@@ -22,3 +22,12 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: doc/_build/html
+    - name: SonarCloud Scan for C and C++
+      # You may pin to the exact commit or the version.
+      # uses: SonarSource/sonarcloud-github-c-cpp@f218be71ddd704dcf7f1b761caa6ffb14134094a
+      uses: SonarSource/sonarcloud-github-c-cpp@v1.3
+      with:
+        # Directory where the sonnar-scanner and build wrapper will be installed. Created if does not exists.
+        installation-path: # optional, default is .sonar
+        # Controls if installed binaries are cached using GitHub cache.
+        cache-binaries: # optional, default is true
